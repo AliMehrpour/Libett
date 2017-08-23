@@ -1,0 +1,31 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+apply from: rootProject.file("gradle/android.gradle")
+
+android {
+    defaultConfig {
+        applicationId "com.volcano.stark.customer"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    // Implementation
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation deps.kotlin
+    implementation deps.appCompat
+    implementation deps.constraintLayout
+
+    // Test
+    testImplementation deps.junit
+    androidTestImplementation deps.androidTestRunner
+    androidTestImplementation deps.androidTestEspresso
+}
