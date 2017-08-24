@@ -6,7 +6,7 @@ apply from: rootProject.file("gradle/android.gradle")
 
 android {
     defaultConfig {
-        applicationId "com.volcano.stark.customer"
+        applicationId "com.volcano.libett.customer"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -23,6 +23,10 @@ dependencies {
     implementation deps.kotlin
     implementation deps.appCompat
     implementation deps.constraintLayout
+
+    implementation "android.arch.lifecycle:runtime:1.0.0-alpha9"
+    implementation "android.arch.lifecycle:extensions:1.0.0-alpha9"
+    annotationProcessor "android.arch.lifecycle:compiler:1.0.0-alpha9"
 
     // Test
     testImplementation deps.junit
