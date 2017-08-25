@@ -1,4 +1,4 @@
-package com.volcano.libett.core;
+package com.libett.core;
 
 import org.junit.Test;
 

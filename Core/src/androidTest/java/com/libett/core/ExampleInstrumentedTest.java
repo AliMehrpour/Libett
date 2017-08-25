@@ -1,4 +1,4 @@
-package com.volcano.libett.core;
+package com.libett.core;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

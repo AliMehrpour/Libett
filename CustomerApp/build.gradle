@@ -6,7 +6,7 @@ apply from: rootProject.file("gradle/android.gradle")
 
 android {
     defaultConfig {
-        applicationId "com.volcano.libett.customer.app"
+        applicationId "com.libett.customer.app"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
