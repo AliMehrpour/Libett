@@ -1,14 +1,12 @@
-apply plugin: 'com.android.application'
-apply plugin: 'kotlin-android'
-apply plugin: 'kotlin-android-extensions'
+apply plugin: 'com.android.library'
 
 apply from: rootProject.file("gradle/android.gradle")
 
 android {
     defaultConfig {
-        applicationId "com.libett.customer.app"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
+
     buildTypes {
         release {
             minifyEnabled false
@@ -21,8 +19,6 @@ dependencies {
     // Implementation
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation deps.kotlin
-    implementation deps.appCompat
-    implementation deps.constraintLayout
 
     // Test
     testImplementation deps.junit

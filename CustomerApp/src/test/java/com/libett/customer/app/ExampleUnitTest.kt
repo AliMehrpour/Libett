@@ -1,5 +1,5 @@
 // Copyright (c) 2017 Volcano Inc. All rights reserved.
-package com.volcano.libett.customer
+package com.libett.customer.app
 
 import org.junit.Test
 

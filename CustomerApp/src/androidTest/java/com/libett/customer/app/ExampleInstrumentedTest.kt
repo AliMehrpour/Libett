@@ -1,5 +1,5 @@
 // Copyright (c) 2017 Volcano Inc. All rights reserved.
-package com.volcano.libett.customer
+package com.libett.customer.app
 
 import android.support.test.InstrumentationRegistry
 import android.support.test.runner.AndroidJUnit4
@@ -20,6 +20,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getTargetContext()
-        assertEquals("com.volcano.libett.customer", appContext.packageName)
+        assertEquals("com.volcano.libett.customer.app", appContext.packageName)
     }
 }
